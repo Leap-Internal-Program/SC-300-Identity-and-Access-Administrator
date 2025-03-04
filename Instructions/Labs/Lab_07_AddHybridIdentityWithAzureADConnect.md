@@ -20,7 +20,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 #### Task 1 - Create the on-premises Active Directory infrastructure
 
-1. Deployment template can be accessed at this link: [On-Premises Test Lab Guide](https://github.com/kelleyvice/TLG-Base-Config_3-VM?tab=readme-ov-file).
+1. Deployment template can be accessed at this link: [On-Premises Test Lab Guide](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm).
 
     **Note** - The deployment of this template can take 30-60 minutes, so be ready to take a break at this step or run the deployment before a lecture section of the course.
 
