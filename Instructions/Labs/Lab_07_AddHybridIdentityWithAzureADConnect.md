@@ -5,15 +5,10 @@ lab:
     module: 'Module 01 - Implement an identity management solution'
 ---
 
-# Lab 07: OPTIONAL --- Add Hybrid Identity with Microsoft Entra Connect
-
-# This lab will only function in a non-lab-hoster environment. If you want to try it using a personal account, it should work. You will not be able to perform within the class.
 
 
 
-
-
-**Note** - This lab is titled Optional.  It takes at least 1 hour to complete and does require that you are detailed in your lab steps.  Please feel free to computer it as time permits.  If your company has already set up its Hybrid configuration, or you don't plan to use Microsoft Entra Connect, please jump over this lab.
+**Note** -  It takes at least 1 hour to complete and does require that you are detailed in your lab steps.  Please feel free to complete it as time permits.  
 
 ## Lab scenario
 
@@ -25,9 +20,9 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 #### Task 1 - Create the on-premises Active Directory infrastructure
 
-1. Deployment template can be accessed at this link: [On-Premises Test Lab Guide](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm).
+1. Deployment template can be accessed at this link: [On-Premises Test Lab Guide](https://github.com/kelleyvice/TLG-Base-Config_3-VM?tab=readme-ov-file).
 
-    **Note to learners and MCTs** - The deployment of this template can take 30-60 minutes, so be ready to take a break at this step or run the deployment before a lecture section of the course.
+    **Note** - The deployment of this template can take 30-60 minutes, so be ready to take a break at this step or run the deployment before a lecture section of the course.
 
     **Note to Lab providers** - If possible, it would be helpful to students to complete and deploy as part of the lab environment setup.
 
