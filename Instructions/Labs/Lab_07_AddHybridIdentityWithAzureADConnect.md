@@ -57,8 +57,8 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 1. In the browser window displaying the Azure portal, navigate to the **DC1** Azure VM and connect to it via Remote Desktop. When prompted, sign in by using the following credentials:
 
-   -   Username: **demouser**
-   -   Password: **Use the secure password you created in Task 1**
+   -   Username: **globaladmin**
+   -   Password: **Pass@word123**
 
 2.  Within the Remote Desktop session to **DC1**, start **Windows PowerShell ISE**, then open the Script pane.  Next, add the following script to the script pane, and run it to disable Internet Explorer enhanced security configuration and User Access Control on both **DC1** and **APP1** Azure VMs:
 
@@ -123,7 +123,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 1. Connect again to the **DC1** Azure VM via Remote Desktop. When prompted, sign in by using the following credentials:
 
-    -   Username: **demouser**
+    -   Username: **globaladmin**
 
     -   Password: **demo\@pass123**
        - **It is strongly recommended that you enter a secure password that you can remember.**
