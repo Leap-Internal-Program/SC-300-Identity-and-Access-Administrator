@@ -20,7 +20,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 #### Task 1 - Create the on-premises Active Directory infrastructure
 
-1. Deployment template can be accessed at this link: [On-Premises Test Lab Guide](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm).
+1. Deployment template can be accessed at this link: [On-Premises Test Lab Guide](https://github.com/kelleyvice/TLG-Base-Config_3-VM/tree/master).
 
     **Note** - The deployment of this template can take 30-60 minutes, so be ready to take a break at this step or run the deployment before a lecture section of the course.
 
@@ -32,26 +32,19 @@ Your company works has Active Directory Domain Services on-premises.  They would
    
    **Note** - The VM that is required for this lab is **DC1**.
 
-3. On the **Custom deployment** page, specify the following settings, then select **Review + Create** then **Create**.
+3.The following resources are deployed as part of the solution:
 
-   -   Subscription: The name of the target Azure subscription where you want to provision the lab environment Azure VMs.
-   -   Resource group: (Create new) **hybrididentity-RG**
-   -   Location: The name of the Azure region that will host the lab environment Azure VMs.
-   -   Config Name: **TlgBaseConfig-01**
-   -   Domain Name: **corp.contoso.com**
-   -   Server OS: **2016-Datacenter**
-   -   Admin Username: **demouser**
-   -   Admin Password: **Enter a secure password that you will remember**
-   -   Deploy Client VM: **No**
-   -   Client VHD URI: **leave blank**
-   -   VM Size: **Standard_D2s_v3**
-   
-   **Note** - Use a similar VM size if your subscription does not support the listed size. Documentation is linked here: <https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes>.
-
-   -   DNS Label Prefix: **Any valid, globally unique DNS name (a unique string consisting of letters, digits, and hyphens, starting with a letter and up to 47 characters long).**
-
-   -   _artifacts Location: **Accept the default**
-   -   _artifacts Location Sas Token: **leave blank**
+    - ADDC VM: Windows Server 2012 R2 VM configured as a domain controller and DNS with static private IP address
+    -  App Server VM: Windows Server 2012 R2 VM joined to the domain
+    -  Client VM: Windows 10 client joined to the domain
+    -  NSG: Network security group configured to allow inbound RDP on 3389
+    -  Virtual network: Virtual network for internal traffic, configured with custom DNS pointing to the ADDC's private IP address
+    -  Network interfaces: 1 NIC per VM
+    -  Public IP addresses: 1 public IP per VM
+    -  Storage accounts: 2 storage accounts for VHDs and diagnostics respectively
+    -  JoinDomain: Each member VM uses the JsonADDomainExtension extension to join the domain.
+    -  BGInfo: The BGInfo extension is applied to all VMs.
+    -  Antimalware: The iaaSAntimalware extension is applied to all VMs.
 
 4. Select **Review + Create**.
 
