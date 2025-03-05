@@ -125,7 +125,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
     -   Username: **globaladmin**
 
-    -   Password: **demo\@pass123**
+    -   Password: **Pass@word123**
        - **It is strongly recommended that you enter a secure password that you can remember.**
 
 2.  Within the Remote Desktop session to **DC1**, start Internet Explorer and navigate to the link below.
